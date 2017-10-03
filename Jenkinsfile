@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'npm install'
-                bat 'npm run tests'
+                sh 'npm install'
+                sh 'npm run tests'
             }
         }
     }
